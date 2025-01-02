@@ -400,6 +400,14 @@ privacy reasons.
     find . -name "file*"  | start searching from current working directory
     find / -name "file*"  | start searching from root directory
 
+More advanced oneliner:
+
+    sudo find ~ -path "*asdf*" -prune -o -type d -name "bin" -print
+
+- start searching from the user home dir
+- prune result which path contains "asdf"
+- print result which path points to directory named "bin"
+
 > NOTE:  
 Use `sudo` in case of presence of problems with permission, e.g. in `tmp` dir:  
 `sudo find /tmp -type f -name "*file"`  
