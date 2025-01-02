@@ -746,7 +746,7 @@ Giving `who` the `-a` option will give more detailed information.
 
 ![](image-26.png)
 
-### Evaluting `.bashrc` startup file
+### Evaluating `.bashrc` startup file
 
     source ~/.bashrc
 
