@@ -770,6 +770,10 @@ Giving `who` the `-a` option will give more detailed information.
 
 ![](image-21.png)
 
+Use the following command to display the `PATH` variable in more readable way:
+
+    echo $PATH | tr ":" "\n" | sort
+
 ### SHELL variable
 
 ![](image-23.png)
