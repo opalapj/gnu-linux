@@ -55,6 +55,8 @@ by `users`, but which are required when no other filesystems are mounted
 (e.g. in single user mode). It may also contain commands which are used
 indirectly by scripts.
 
+> IMPORTANT: `bin` directory for user defined scripts is under `~/.local/bin`
+
 ### Requirements
 
 There must be no subdirectories in `/bin`.
