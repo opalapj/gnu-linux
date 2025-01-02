@@ -774,6 +774,21 @@ Use the following command to display the `PATH` variable in more readable way:
 
     echo $PATH | tr ":" "\n" | sort
 
+Paths from `PATH` variable comes from various scripts and startup files, i.e.:
+
+- `login` and variables derived from the `/etc/login.defs` config
+file (see more: `man login.1`)
+
+- `pam_env` and variables derived from the `/etc/security/pam_env.conf`,
+`/etc/environment`, `~/.pam_environment` config files (see more:
+`man pam_env.7`)
+
+- `/etc/profile` and scripts coming from `/etc/profile.d/`
+
+- `~/.profile`
+
+- `~/.bashrc`
+
 ### SHELL variable
 
 ![](image-23.png)
